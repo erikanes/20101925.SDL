@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<STATES>
+	<MENU>
+		<TEXTURES>
+		<texture filename="Resources/title.png" ID="title" />
+ 		<texture filename="Resources/startbutton.png" ID="startbutton" />
+		</TEXTURES>
+
+		<OBJECTS>
+		<object type="Graphic" x="150" y="100" width="376" height="80" textureID="title" numFrames="0" />
+		<object type="MenuButton" x="250" y="250" width="110" height="50" textureID="startbutton" numFrames="0" callbackID="1" />
+		</OBJECTS>
+
+	</MENU>
+
+	<PLAY>
+		<TEXTURES>
+		<texture filename="Resources/dish.png" ID="dish1" />
+		<texture filename="Resources/dish.png" ID="dish2" />
+		<texture filename="Resources/dish.png" ID="dish3" />
+		<texture filename="Resources/effect.png" ID="effect" />
+		</TEXTURES>
+
+		<OBJECTS>
+		<object type="Dish" x="100" y="100" width="170" height="170" textureID="dish1" numFrames="0" callbackID="0"/>
+		<object type="Dish" x="100" y="100" width="170" height="170" textureID="dish2" numFrames="0" callbackID="1"/>
+		<object type="Dish" x="100" y="100" width="170" height="170" textureID="dish3" numFrames="0" callbackID="2"/>
+		<object type="Graphic" x="100" y="100" width="14" height="14" textureID="effect" numFrames="0" />
+		</OBJECTS>
+	</PLAY>
+
+	<GAMEOVER>
+		<TEXTURES>
+		<texture filename="Resources/mainbutton.png" ID="mainbutton" />
+		</TEXTURES>
+
+		<OBJECTS>
+		<object type="MenuButton" x="200" y="350" width="200" height="80" textureID="mainbutton" numFrames="0" callbackID="0" />
+		</OBJECTS>
+	</GAMEOVER>
+
+</STATES>
